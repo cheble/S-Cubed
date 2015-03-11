@@ -1,0 +1,18 @@
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav">
+          <li {% if page.nav == 'Home' %} class="active" {% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
+          <li {% if page.nav == 'About Me' %} class="active" {% endif %}><a href="{{ site.baseurl }}/about">About Me</a></li>
+          <li {% if page.nav == 'Resume' %} class="active" {% endif %}><a href="{{ site.baseurl }}/resume">Resume</a></li>
+          <li {% if page.nav == 'Projects' %} class="active" {% endif %}><a href="{{ site.baseurl }}/projects">Projects</a></li>
+      </ul>
+  </div>
+</div>
