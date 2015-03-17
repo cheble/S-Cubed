@@ -14,7 +14,8 @@
 
   <body>
     <!-- ******************* Navigation Bar ******************* -->
-    {% include navbar.html %}
+
+    {% if page.nav_type == 'restricted' %} {% include restricted_navbar.html %}{% else %}{% include navbar.html %}{% endif %}
     <!-- ***************** END Navigation Bar ***************** -->
 
     <!-- ******************** Main Content ******************** -->
