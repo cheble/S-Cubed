@@ -9,6 +9,12 @@ Each scenario needs a details page
 
 ^^^^Good enough for phase 4^^^^
 
+Login
+
+Sign up 
+
 Favorites
+
 Inputs
+
 Settings
