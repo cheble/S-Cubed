@@ -47,6 +47,12 @@ url: http://cheble.github.io/S-Cubed
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: "/S-Cubed"
 
+loginurl: "Login.html"
+searchurl: "Search.html"
+accounturl: "Account.html"
+favoritesurl: "Favorites.html"
+submiturl: "Submit.html"
+logouturl: "Logout.html"
 #
 # !! You don't need to change any of the configuration flags below !!
 #
