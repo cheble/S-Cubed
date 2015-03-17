@@ -7,6 +7,7 @@
 <script src="js/material.min.js"></script>
 <script>
     $(document).ready(function() {
+    	//DOM sensitive logic
         $.material.init();
     });
 </script>
