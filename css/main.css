@@ -61,6 +61,8 @@ body {
   text-transform: none;
   text-overflow: ellipsis;
   text-align: left;
+  font-size: 12px;
+  height: 5em;
 }
 
 .tile_img {
@@ -68,6 +70,10 @@ body {
   height: 50px;
 }
 
+.tile_title {
+  font-weight: bold;
+}
+
 .tile_body {
-  max-height: 50px;
+
 }
