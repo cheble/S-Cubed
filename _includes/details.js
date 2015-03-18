@@ -13,7 +13,7 @@
 
     	var name = d;
 
-    	var arrTags[];
+    	var arrTags = [];
 
     	var sImage;
 
@@ -23,11 +23,11 @@
 
     	var sDownload;
 
-    	var arrLinks[]; //array ( of link )
+    	var arrLinks = []; //array ( of link )
 
     	var nFavorites;
 
-    	var arrComments[]; //arrary ( of comment )
+    	var arrComments = []; //arrary ( of comment )
 
     	//CONSTANTS//
 	    var name = "name";
