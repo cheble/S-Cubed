@@ -50,49 +50,8 @@ body {
   height: 60px;
   line-height: 60px;
 }
-.social-btn {
-  margin: 0px 0px 0px 4px;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.social-btn a:link,
-.social-btn .a:visited,
-.social-btn .a:hover,
-.social-btn .a:active {
-  text-decoration: none;
-}
-.social-btn .fa {
-  font-size: 1.5em;
-  display: block;
-  line-height: 30px;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 5px;
-  color: rgba(255, 255, 255, 1);
-  background-color:#000;
-}
-.social-btn .fa:hover, .social-btn .fa:active {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-}
 
-.social-btn .fa-facebook,
-.social-btn .fa-facebook-square{background-color:#3C599F;}
-.social-btn .fa-github,
-.social-btn .fa-github-alt,
-.social-btn .fa-github-square{background-color:#070709;}
-.social-btn .fa-google-plus,
-.social-btn .fa-google-plus-square{background-color:#CF3D2E;}
-.social-btn .fa-linkedin,
-.social-btn .fa-linkedin-square{background-color:#0085AE;}
-.social-btn .fa-twitter,
-.social-btn .fa-twitter-square{background-color:#32CCFE;}
-.social-btn .fa-youtube,
-.social-btn .fa-youtube-play,
-.social-btn .fa-youtube-square{background-color:#C52F30;}
+.input-group-btn {
+  padding-left: 5px;
+  vertical-align: bottom;
+}
