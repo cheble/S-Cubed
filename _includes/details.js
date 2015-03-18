@@ -2,7 +2,7 @@
 	var Details ;
     $(document).ready(function() {
     	//DOM sensitive logic
-    	Details = new Details(getParameter("d"));
+    	Details = new Details(getParameterByName("d"));
     	Details.setUp();
     });
 
@@ -44,7 +44,7 @@
 		this.setUp = function(){
 			$.getJSON( "Details/"+name+".json", function( data ) {
 				var stopping = data;
-			}
+			});
 		}
 
 		var link = function(description,url){
