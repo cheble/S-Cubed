@@ -56,6 +56,11 @@ body {
   vertical-align: bottom;
 }
 
+.tile {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .tile_north {
   white-space: normal;
   text-transform: none;
@@ -63,6 +68,7 @@ body {
   text-align: left;
   font-size: 12px;
   height: 5em;
+  overflow: hidden;
 }
 
 .tile_img {
