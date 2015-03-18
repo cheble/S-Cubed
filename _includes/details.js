@@ -11,7 +11,7 @@
 
     	var context = this;
 
-    	var name = d;
+    	var sName = d;
 
     	var arrTags = [];
 
@@ -42,7 +42,7 @@
 	    //--------//
 
 		this.setUp = function(){
-			$.getJSON( "Details/"+name+".json", function( data ) {
+			$.getJSON( "Details/"+sName+".json", function( data ) {
 				var stopping = data;
 			});
 		}
