@@ -64,7 +64,7 @@
 	    	
 	    	var htmlLinksOut = "";
 	    	for(var i = 0; i < arrLinks.length; i++){
-	    		var htmlLinks = "<a href='<<href>>'><<text>></a><br />";
+	    		var htmlLinks = "<a class='btn btn-flat btn-link' href='<<href>>'><<text>></a><br />";
 	    		htmlLinks = htmlLinks.replace("<<href>>",arrLinks[i].url);
 	    		htmlLinks = htmlLinks.replace("<<text>>",arrLinks[i].description);
 	    		htmlLinksOut += htmlLinks;
