@@ -69,7 +69,7 @@
 	    		htmlLinks = htmlLinks.replace("<<text>>",arrLinks[i].description);
 	    		htmlLinksOut += htmlLinks;
 	    	}
-	    	$("#detailsExstraLinks").html(htmlLinksOut);
+	    	$("#detailsExtraLinks").html(htmlLinksOut);
 
 	    	var htmlCommentsOut = "";
 	    	for(var i = 0; i < arrComments.length; i++){
