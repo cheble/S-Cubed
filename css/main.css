@@ -112,9 +112,10 @@ body {
 #detailsImage{
     height: 100px;
     width: 100px;
+    margin-bottom:15px;
 }
 #detailsTitle{
-
+  font-size: 50px;
 }
 #detailsDetails{
 
@@ -122,11 +123,14 @@ body {
 #detailsComments{
 
 }
+#content{
+  max-width:750px;
+}
 .comment_container{
 
 }
 .comment{
-  
+
 }
 .comment_author{
 
