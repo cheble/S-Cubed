@@ -44,6 +44,7 @@
 		this.setUp = function(){
 			$.getJSON( "Details/"+sName+".json", function( data ) {
 				//Build this Details Object
+				sName = data.name;
 				sImage = data.image;
 				sDetails = data.details;
 				sWebsite = data.website;
