@@ -44,7 +44,7 @@
 		this.setUp = function(){
 			$.getJSON( "Details/"+name+".json", function( data ) {
 				var stopping = data;
-			}
+			});
 		}
 
 		var link = function(description,url){
