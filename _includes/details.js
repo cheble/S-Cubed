@@ -2,7 +2,7 @@
 	var Details ;
     $(document).ready(function() {
     	//DOM sensitive logic
-    	Details = new Details(getParameter("d"));
+    	Details = new Details(getParameterByName("d"));
     	Details.setUp();
     });
 
