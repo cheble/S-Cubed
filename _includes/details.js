@@ -17,7 +17,7 @@
 
     	var sImage;
 
-    	var sDtails;
+    	var sDetails;
 
     	var sWebsite;
 
@@ -43,7 +43,26 @@
 
 		this.setUp = function(){
 			$.getJSON( "Details/"+sName+".json", function( data ) {
-				var stopping = data;
+				//Build this Details Object
+				sImage = data.image;
+				sDetails = data.details;
+				sWebsite = data.website;
+				sDownload = data.download;
+				nFavorites = Number(data.favorites);
+
+				for(var i = 0; i < data.tags.length; i++){
+					arrTags.push(data.tags[i]);
+				}
+
+				for(var i = 0; i < data.Links.length; i++){
+					var l = new link(data.Links[i].description, data.Links[i].url);
+					arrLinks.push(l);
+				}
+
+				for(var i = 0; i < data.comments.length; i++){
+					var c = new comment(data.comments[i].username,data.comments[i].comment);
+					arrComments.push(c);
+				}
 			});
 		}
 
@@ -58,6 +77,7 @@
 
 	    	this.username = username;
 	    	this.comment = comment;
+	    	
 	    }
 
 
