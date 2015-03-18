@@ -1,3 +1,46 @@
-test
-test
-test
+{
+  "name": "Eclipse",
+  "tags": [
+    "IDE",
+    "Java",
+    "C",
+    "C++"
+  ],
+  "image": "https://lh3.googleusercontent.com/-gLK9EQah4RA/AAAAAAAAAAI/AAAAAAAAAdw/ci8rigEvME8/photo.jpg",
+  "details": "Eclipse is a cross-platform ide. It can be used for many languages including Java, C, C++, PHP. Eclipse has many features like syntax highlighting, error highlighting, and auto-complete. Eclipse also has a large plug-in library for additional support.",
+  "website": "http://www.eclipse.org/",
+  "download": "http://www.eclipse.org/downloads/",
+  "Links": [
+    {
+      "description": "Java JRE and JDK downloads",
+      "url": "http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+    },
+    {
+      "description": "Stack Overflow Questions",
+      "url": "http://stackoverflow.com/questions/tagged/eclipse"
+    }
+  ],
+  "favorites": 1258,
+  "comments": [
+    {
+      "username": "teto47",
+      "comment": "I love this IDE. I use it for all of my coding."
+    },
+    {
+      "username": "yielding7",
+      "comment": "This is the IDE we use at work. I love all of the features and the plugin support."
+    },
+    {
+      "username": "someGuy1",
+      "comment": "I hate eclipse. Netbeans is the way to go!"
+    },
+    {
+      "username": "yuro91",
+      "comment": "Which version do I need? Why are there so many download links?"
+    },
+    {
+      "username": "sillyShoes22",
+      "comment": "@yuro91, Select your operating system and choose one that matches the language you will use. For Java, the best option is the 'Eclipse IDE for Java Developers'"
+    }
+  ]
+}
