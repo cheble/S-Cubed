@@ -109,7 +109,25 @@ body {
 
 
 /*Details Page*/
-#id{
+#detailsImage{
     height: 100px;
     width: 100px;
+}
+#detailsTitle{
+
+}
+#detailsDetails{
+
+}
+#detailsComments{
+
+}
+.comment_container{
+
+}
+.comment{
+  
+}
+.comment_author{
+
 }
