@@ -15,7 +15,16 @@
       </div>
     </div>
     <div class="tile_south">
+      <div class="tile_tags">
+        <span>
+          {% for tag in include.value.tags %}
+            <div class="tile_tag btn-material-blue">{{ tag }}</div>
+          {% endfor %}
+        </span>
+      </div>
+      <div class="tile_stats">
 
+      </div>
     </div>
   </a>
 </div>

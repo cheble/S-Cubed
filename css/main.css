@@ -67,7 +67,7 @@ body {
   text-overflow: ellipsis;
   text-align: left;
   font-size: 12px;
-  height: 5.5em;
+  height: 8em;
   overflow: hidden;
 }
 
@@ -100,4 +100,10 @@ body {
 .tile_body, .tile_title {
   padding-left: 54px;
   padding-right: 54px;
+}
+
+.tile_tag {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 0px 2px 0px 2px;
 }
