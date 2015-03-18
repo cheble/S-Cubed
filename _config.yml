@@ -53,6 +53,14 @@ accounturl: "Account.html"
 favoritesurl: "Favorites.html"
 submiturl: "Submit.html"
 logouturl: "Logout.html"
+
+nav_account: "account"
+nav_search: "search"
+nav_login: "login"
+nav_favorites: "favorites"
+nav_submit: "submit"
+nav_logout: "logout"
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
