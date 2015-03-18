@@ -74,8 +74,13 @@ body {
 .tile_img {
   width: 50px;
   height: 50px;
-  padding-left: 4px;
-  padding-right: 4px;
+  border-left: 4px;
+  border-right: 4px;
+}
+
+.tile_img img {
+  width: 50px;
+  height: 50px;
 }
 
 .tile_title {
