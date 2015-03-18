@@ -87,7 +87,7 @@ body {
   font-weight: bold;
 }
 
-.tile_body, .title_title {
+.tile_body, .tile_title {
   padding-left: 54px;
   padding-right: 54px;
 }
