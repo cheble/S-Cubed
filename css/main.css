@@ -56,15 +56,18 @@ body {
   vertical-align: bottom;
 }
 
+.tile_north {
+  white-space: normal;
+  text-transform: none;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
 .tile_img {
   width: 50px;
   height: 50px;
 }
 
 .tile_body {
-  white-space: normal;
-  text-transform: none;
-  text-overflow: ellipsis;
-  text-align: left;
   max-height: 50px;
 }
