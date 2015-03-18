@@ -41,6 +41,49 @@
 	    var comments = "comments";
 	    //--------//
 
+	    this.populatePage = function(){
+	    	$("#detailsImage").attr('src',sImage);
+	    	$("#detailsTitle").html(sName);
+	    	$("#detailsDetails").html(sDetails);
+	    	$("#detailsHomePageLink").attr('src',sWebsite);
+	    	$("#detailsdownloadLink").attr('src',sDownload);
+	    	$("#detailsFavorites").html(String(nFavorites));
+
+
+	    	//Tags, Links, Comments
+	    	var tagLink = "#" //dumby
+	    	
+	    	var htmlTagOut=""
+	    	for(var i = 0; i < arrTags.length; i++){
+	    		var htmlTags = "<a href='<<href>>' class='btn btn-primary btn-raised'><<text>></a>"
+	    		htmlTags = htmlTags.replace("<<href>>",tagLink);
+	    		htmlTags = htmlTags.replace("<<text>>",arrTags[i]);
+	    		htmlTagOut += htmlTags;
+	    	}
+	    	$("#detailsTags").html(htmlTagOut);
+	    	
+	    	var htmlLinksOut = "";
+	    	for(var i = 0; i < arrLinks.length; i++){
+	    		var htmlLinks = "<a href='<<href>>'><<text>></a><br />";
+	    		htmlLinks = htmlLinks.replace("<<href>>",arrLinks[i].url);
+	    		htmlLinks = htmlLinks.replace("<<text>>",arrLinks[i].description);
+	    		htmlLinksOut += htmlLinks;
+	    	}
+	    	$("#detailsExstraLinks").html(htmlLinksOut);
+
+	    	var htmlCommentsOut = "";
+	    	for(var i = 0; i < arrComments.length; i++){
+	    		var htmlComment = "<div class='comment_container'><span class='comment'><<comment>></span><br />";
+	    		htmlComment += "<span class='comment_author'><<author>></span></div>";
+
+	    		htmlComment = htmlComment.replace("<<comment>>",arrComments[i].comment);
+	    		htmlComment = htmlComment.replace("<<author>>",arrComments[i].username);
+	    		htmlCommentsOut += htmlComment;
+	    	}
+	    	$("#detailsComments").html(htmlCommentsOut);
+
+	    }
+
 		this.setUp = function(){
 			$.getJSON( "Details/"+sName+".json", function( data ) {
 				//Build this Details Object
@@ -64,6 +107,8 @@
 					var c = new comment(data.comments[i].username,data.comments[i].comment);
 					arrComments.push(c);
 				}
+
+				context.populatePage();
 			});
 		}
 
