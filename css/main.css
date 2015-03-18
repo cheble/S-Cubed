@@ -64,10 +64,8 @@ body {
 .tile_north {
   white-space: normal;
   text-transform: none;
-  text-overflow: ellipsis;
   text-align: left;
   font-size: 12px;
-  height: 8em;
   overflow: hidden;
 }
 
