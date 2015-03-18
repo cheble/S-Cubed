@@ -6,7 +6,7 @@
     "Venn Diagram",
     "Technical Drawing"
   ],
-  "image": "",
+  "image": "https://pbs.twimg.com/profile_images/431840457467785216/n6nG92M7.png",
   "details": "Giffy helps to create professional-quality flowcharts, Org charts, UML diagrams, Network diagrams, Wireframes, Technical drawings and more. Gliffy works directly in your browser!.",
   "website": "http://www.gliffy.com/",
   "Links": [
@@ -17,7 +17,7 @@
     {
       "description": "Plugin Detailing with JIRA Issues in Gliffy Diagrams",
       "url": "http://www.gliffy.com/products/jira-plugin/"
-    },    
+    },
     {
       "description": "Stack Overflow Questions",
       "url": "http://stackoverflow.com/questions/tagged/gliffy"

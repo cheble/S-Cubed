@@ -2,9 +2,9 @@
   "name": "yUML",
   "tags": [
     "UML Diagram",
-    "Diagram"   
+    "Diagram"
   ],
-  "image": "",
+  "image": "http://yuml.me/images/yUML.png",
   "details": "yUML helps to create and share simple UML diagrams in your blogs, wikis, forums, bug-trackers and emails.",
   "website": "http://yuml.me/",
   "Links": [
@@ -12,7 +12,7 @@
       "description": "3rd Party Tools For Using yUML",
       "url": "http://yuml.me/wildthing"
     },
-    
+
     {
       "description": "Stack Overflow Questions",
       "url": "http://stackoverflow.com/search?tab=relevance&q=yUML"
@@ -32,11 +32,11 @@
       "username": "Rokus",
       "comment": "I like it for its easiness."
     },
-    
+
     {
       "username": "XiLihNoh",
       "comment": "Can someone tell me how to use it?"
     },
-  
+
   ]
 }
