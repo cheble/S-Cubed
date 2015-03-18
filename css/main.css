@@ -84,10 +84,10 @@ body {
 }
 
 .tile_title {
-  padding-left: 4px;
   font-weight: bold;
 }
 
-.tile_body {
-
+.tile_body, .title_title {
+  padding-left: 54px;
+  padding-right: 54px;
 }
