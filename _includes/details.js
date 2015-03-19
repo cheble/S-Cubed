@@ -45,8 +45,8 @@
 	    	$("#detailsImage").attr('src',sImage);
 	    	$("#detailsTitle").html(sName);
 	    	$("#detailsDetails").html(sDetails);
-	    	$("#detailsHomePageLink").attr('src',sWebsite);
-	    	$("#detailsdownloadLink").attr('src',sDownload);
+	    	$("#detailsHomePageLink").attr('href',sWebsite);
+	    	$("#detailsDownloadLink").attr('href',sDownload);
 	    	$("#detailsFavorites").html(String(nFavorites));
 
 
