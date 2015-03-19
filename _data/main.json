@@ -1,3 +1,5 @@
+---
+---
 {
   "tags": {
     "uml": "UML",
@@ -20,7 +22,7 @@
     "statistics": "Statistics"
   },
   "popular_tags": [
-    "{{ site.data.main.tags.ide }}",
+    {{ site.data.main.tags.ide }},
     "{{ site.data.main.tags.java }}",
     "{{ site.data.main.tags.cpp }}",
     "{{ site.data.main.tags.uml_diagram }}",
