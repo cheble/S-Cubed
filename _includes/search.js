@@ -1,5 +1,7 @@
 <script>
 
+var test = "{{ site.data | group_by:"tags" | jsonify }}";
+
 var Search ;
 $(document).ready(function() {
   //DOM sensitive logic
