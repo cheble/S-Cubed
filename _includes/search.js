@@ -1,4 +1,20 @@
+---
+layout: none
+---
 <script>
+
+  var tag_maps = [];
+  {% for tag in site.data.main.tags %}
+    var map = [];
+    {% for data in site.data %}
+      {% if data.name %}
+
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  var test = {{ site.data | group_by:"tags" | jsonify }}
+
 	var Search ;
     $(document).ready(function() {
     	//DOM sensitive logic
@@ -7,11 +23,11 @@
     });
 
 
-    var Search = function(d){
+    var Search = function(q){
 
     	var context = this;
 
-    	var sName = d;
+    	var sName = q;
 
     	var arrTags = [];
 
