@@ -13,7 +13,7 @@ layout: none
     {% endfor %}
   {% endfor %}
 
-  var test = {{ site.data | group_by:"tags" | jsonify }}
+  var test = {{ site.data | group_by:"tags" | jsonify }};
 
 	var Search ;
     $(document).ready(function() {
