@@ -1,0 +1,36 @@
+{
+  "tags": {
+    "uml": "UML",
+    "diagram": "Diagram",
+    "chart": "Chart",
+    "org_chart": "Org Chart",
+    "flow_chart": "Flow Chart",
+    "uml_diagram": "UML Diagram",
+    "process_diagram": "Process Diagram",
+    "class_diagram": "Class Diagram",
+    "venn_diagram": "Venn Diagram",
+    "network_diagram": "Network Diagram",
+    "draw": "Draw",
+    "ide": "IDE",
+    "cpp": "C++",
+    "c": "C",
+    "java": "Java",
+    "php": "PHP",
+    "r": "R",
+    "statistics": "Statistics"
+  },
+  "popular_tags": [
+    "{{ site.data.main.tags.ide }}",
+    "{{ site.data.main.tags.java }}",
+    "{{ site.data.main.tags.cpp }}",
+    "{{ site.data.main.tags.uml_diagram }}",
+    "{{ site.data.main.tags.draw }}",
+    "{{ site.data.main.tags.statistics }}",
+    "{{ site.data.main.tags.chart }}",
+    "{{ site.data.main.tags.php }}",
+    "{{ site.data.main.tags.c }}",
+    "{{ site.data.main.tags.r }}",
+    "{{ site.data.main.tags.flow_chart }}",
+    "{{ site.data.main.tags.class_diagram }}"
+  ]
+}
