@@ -9,8 +9,8 @@
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
-          <li {% if page.nav == '{{ site.nav_search }}' %} class="active" {% endif %}><a href="{{ site.searchurl }}">Search</a></li>
-          <li {% if page.nav == '{{ site.nav_login }}' %} class="active" {% endif %}><a href="{{ site.loginurl }}">Log in</a></li>
+          <li {% if page.nav == '{{ site.nav_search }}' %} class="active" {% endif %}><a href="{{ site.url }}{{ site.searchurl }}">Search</a></li>
+          <li {% if page.nav == '{{ site.nav_login }}' %} class="active" {% endif %}><a href="{{ site.url }}{{ site.loginurl }}">Log in</a></li>
       </ul>
   </div>
 </div>

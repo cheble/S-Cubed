@@ -9,11 +9,11 @@
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
-          <li {% if page.nav == '{{ site.nav_account }}' %} class="active" {% endif %}><a href="{{ site.accounturl }}">Account</a></li>
-          <li {% if page.nav == '{{ site.nav_search }}' %} class="active" {% endif %}><a href="{{ site.searchurl }}">Search</a></li>
-          <li {% if page.nav == '{{ site.nav_favorites }}' %} class="active" {% endif %}><a href="{{ site.favoritesurl }}">Favorites</a></li>
-          <li {% if page.nav == '{{ site.nav_submit }}' %} class="active" {% endif %}><a href="{{ site.submiturl }}">Submit</a></li>
-          <li {% if page.nav == '{{ site.nav_logout }}' %} class="active" {% endif %}><a href="{{ site.logouturl }}">Logout</a></li>
+          <li {% if page.nav == '{{ site.nav_account }}' %} class="active" {% endif %}><a href="{{ site.url }}{{ site.accounturl }}">Account</a></li>
+          <li {% if page.nav == '{{ site.nav_search }}' %} class="active" {% endif %}><a href="{{ site.url }}{{ site.searchurl }}">Search</a></li>
+          <li {% if page.nav == '{{ site.nav_favorites }}' %} class="active" {% endif %}><a href="{{ site.url }}{{ site.favoritesurl }}">Favorites</a></li>
+          <li {% if page.nav == '{{ site.nav_submit }}' %} class="active" {% endif %}><a href="{{ site.url }}{{ site.submiturl }}">Submit</a></li>
+          <li {% if page.nav == '{{ site.nav_logout }}' %} class="active" {% endif %}><a href="{{ site.url }}{{ site.logouturl }}">Logout</a></li>
       </ul>
   </div>
 </div>
