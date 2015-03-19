@@ -54,6 +54,7 @@ favoritesurl: "/Favorites.html"
 submiturl: "/Submit.html"
 logouturl: "/Logout.html"
 detailsurl: "/Details.html"
+searchresultsurl: "/SearchResults.html"
 
 nav_account: "account"
 nav_search: "search"
