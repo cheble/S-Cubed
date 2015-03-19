@@ -1,5 +1,6 @@
 {
   "name": "Eclipse",
+  "id": "eclipse",
   "tags": [
     "IDE",
     "Java",
