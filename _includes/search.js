@@ -1,6 +1,3 @@
----
-layout: none
----
 <script>
 
   var tag_maps = [];
