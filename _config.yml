@@ -61,7 +61,7 @@ nav_favorites: "favorites"
 nav_submit: "submit"
 nav_logout: "logout"
 
-keep_files:   ["_data/eclipse.json"]
+include:   ["_data/eclipse.json"]
 
 #
 # !! You don't need to change any of the configuration flags below !!
