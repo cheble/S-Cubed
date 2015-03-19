@@ -21,18 +21,18 @@
     "r": "R",
     "statistics": "Statistics"
   },
-  "popular_tags": [
-    "{{ site.data.main.tags.ide }}",
-    "{{ site.data.main.tags.java }}",
-    "{{ site.data.main.tags.cpp }}",
-    "{{ site.data.main.tags.uml_diagram }}",
-    "{{ site.data.main.tags.draw }}",
-    "{{ site.data.main.tags.statistics }}",
-    "{{ site.data.main.tags.chart }}",
-    "{{ site.data.main.tags.php }}",
-    "{{ site.data.main.tags.c }}",
-    "{{ site.data.main.tags.r }}",
-    "{{ site.data.main.tags.flow_chart }}",
-    "{{ site.data.main.tags.class_diagram }}"
-  ]
+  "popular_tags": {
+    "ide": "IDE",
+    "java": "Java",
+    "c": "C",
+    "uml_diagram": "UML Diagram",
+    "draw": "Draw",
+    "statistics": "Statistics",
+    "chart": "Chart",
+    "php": "PHP",
+    "cpp": "C++",
+    "r": "R",
+    "flow_chart": "Flow Chart",
+    "class_diagram": "Class Diagram"
+  }
 }
