@@ -77,7 +77,7 @@
 	    		htmlComment += "<span class='comment_author'><<author>></span></div>";
 
 	    		htmlComment = htmlComment.replace("<<comment>>",arrComments[i].comment);
-	    		htmlComment = htmlComment.replace("<<author>>","- "arrComments[i].username);
+	    		htmlComment = htmlComment.replace("<<author>>","- " + arrComments[i].username);
 	    		htmlCommentsOut += htmlComment;
 	    	}
 	    	$("#detailsComments").html(htmlCommentsOut);
