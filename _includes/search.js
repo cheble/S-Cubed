@@ -1,6 +1,6 @@
 <script>
 
-var test = "{{ site.data | group_by:"tags" | jsonify }}";
+var test = "{{ site.data | size }}";
 
 var Search ;
 $(document).ready(function() {
