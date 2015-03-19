@@ -30,6 +30,8 @@
 
     <!-- ********************* Javascript ********************* -->
     {% include global.js %}
+    {% if page.title == 'Details' %} {% include details.js %} {% endif %}
+    {% if page.title == 'Search Results' %} {% include search.js %} {% endif %}
     <!-- ******************* END Javascript ******************* -->
   </body>
 </html>
