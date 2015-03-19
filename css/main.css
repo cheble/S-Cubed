@@ -126,6 +126,10 @@ body {
 #content{
   max-width:750px;
 }
+#detailsHeaders{
+  font-size: 25px;
+  color: rgb(0, 149, 135);
+}
 .comment_container{
   padding-top: 10px;
 }
@@ -133,5 +137,6 @@ body {
 
 }
 .comment_author{
-
+  font-style: italic;
+  color: rgb(0, 149, 135);
 }
