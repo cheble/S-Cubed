@@ -1,6 +1,6 @@
 <script>
 
-var test = "{{ site.data.main | jsonify }}";
+var test = "{{ site.data.data | group_by:'name' | jsonify }}";
 
 var Search ;
 $(document).ready(function() {
