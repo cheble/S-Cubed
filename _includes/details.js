@@ -52,7 +52,7 @@
 
 	    	//Tags, Links, Comments
 	    	var tagLink = "#" //dumby
-	    	
+
 	    	var htmlTagOut=""
 	    	for(var i = 0; i < arrTags.length; i++){
 	    		var htmlTags = "<a href='<<href>>' class='btn btn-primary btn-raised'><<text>></a>"
@@ -61,7 +61,7 @@
 	    		htmlTagOut += htmlTags;
 	    	}
 	    	$("#detailsTags").html(htmlTagOut);
-	    	
+
 	    	var htmlLinksOut = "";
 	    	for(var i = 0; i < arrLinks.length; i++){
 	    		var htmlLinks = "<a  href='<<href>>' class='btn btn-primary btn-raised'><<text>></a><br />";
@@ -85,7 +85,7 @@
 	    }
 
 		this.setUp = function(){
-			$.getJSON( "Details/"+sName+".json", function( data ) {
+			$.getJSON( "_data/"+sName+".json", function( data ) {
 				//Build this Details Object
 				sName = data.name;
 				sImage = data.image;
@@ -132,11 +132,11 @@
 
 	    	this.username = username;
 	    	this.comment = comment;
-	    	
+
 	    }
 
 
     }
 
-    
+
 </script>
