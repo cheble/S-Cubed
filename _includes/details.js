@@ -109,7 +109,15 @@
 				}
 
 				context.populatePage();
-			});
+			}).done(function() {
+			    console.log( "second success" );
+			  })
+			  .fail(function() {
+			    console.log( "error" );
+			  })
+			  .always(function() {
+			    console.log( "complete" );
+			  });
 		}
 
 		var link = function(description,url){
