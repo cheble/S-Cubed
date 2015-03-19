@@ -1,6 +1,6 @@
 <script>
 
-var test = "{{ site.data | size }}";
+var test = "{{ site.data.main | jsonify }}";
 
 var Search ;
 $(document).ready(function() {
