@@ -80,8 +80,10 @@
 	    		htmlComment = htmlComment.replace("<<author>>","- " + arrComments[i].username);
 	    		htmlCommentsOut += htmlComment;
 	    	}
-	    	htmlCommentsOut += "<div class='leaveacomment'><i class='fa fa-pencil'></i>";
-	    	htmlCommentsOut += "|<input type='text' placeholder='Write a comment...'></input></div>";
+	    	htmlCommentsOut += '<div class="form-group">';
+			htmlCommentsOut += '<label for="comment">Comment:</label>';
+			htmlCommentsOut += '<textarea class="form-control" rows="9" id="comment"></textarea>';
+			htmlCommentsOut += '</div>';
 
 	    	$("#detailsComments").html(htmlCommentsOut);
 
