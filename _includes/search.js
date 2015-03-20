@@ -3,7 +3,6 @@
 var tag_maps = [];
 {% for tag in site.data.main.tags %}
 	var map = [];
-  var test = {{ site.data.details | jsonify }};
 	{% for data in site.data.details %}
       console.log( "data.tags {{ data[1].tags | jsonify }}" );
       console.log( "tag[0] {{ tag[0] }}" );
