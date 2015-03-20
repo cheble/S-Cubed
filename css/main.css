@@ -102,10 +102,11 @@ body {
 }
 
 .tile_tag {
-  margin-left: 4px;
+   margin-left: 4px;
   margin-right: 4px;
-  padding: 0px 2px 0px 2px;
+  padding: 0px 5px 0px 5px;
   display: inline-block;
+  -webkit-border-radius: 2px
 }
 
 
