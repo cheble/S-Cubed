@@ -5,10 +5,10 @@ var tag_maps = [];
 	var map = [];
   console.log( "{{ site.data.details | size }}" );
 	{% for data in site.data.details %}
-      console.log( "{{ data | size }}" );
-      {% if data.tags contains tag[0] or data.tags contains tag[1] %}
+      console.log( "{{ data[1] | size }}" );
+      {% if data[1].tags contains tag[0] or data[1].tags contains tag[1] %}
         console.log( "{{ data[0] }}" );
-        map.push("{{ data.id }}");
+        map.push("{{ data[1].id }}");
       {% endif %}
 	{% endfor %}
   tag_maps.push({
