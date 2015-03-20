@@ -3,8 +3,8 @@
 var tag_maps = [];
 {% for tag in site.data.main.tags %}
 	var map = [];
-  console.log( "{{ site.data.details | size }}" );
-	{% for data in site.data.details %}
+  console.log( " details size {{ site.data.details | size }}" );
+	{% for data in site.data.details[1] %}
       console.log( "{{ data[1] | size }}" );
       {% if data[1].tags contains tag[0] or data[1].tags contains tag[1] %}
         console.log( "{{ data[0] }}" );
