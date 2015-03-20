@@ -46,10 +46,17 @@ var Search = function(q){
 
   for (i in products) {
     var product = products[i];
+
     if (query.toUpperCase() === product.id.toUpperCase() ||
           query.toUpperCase() === product.name.toUpperCase()) {
-      console.log("match: ")
       matchedIds.push(product.id);
+    } else {
+      for ( j in product.tags ) {
+        if (query.toUpperCase() === product.tags[j].toUpperCase()) {
+          matchedIds.push(product.id);
+          break;
+        }
+      }
     }
   }
   console.log(matchedIds);
