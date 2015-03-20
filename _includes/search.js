@@ -3,9 +3,10 @@
 var tag_maps = [];
 {% for tag in site.data.main.tags %}
 	var map = [];
-  console.log( " details size {{ site.data.details | size }}" );
-	{% for data in site.data.details[1] %}
-      console.log( "{{ data[1] | size }}" );
+  var test = {{ site.data.details | jsonify }};
+	{% for data in site.data.details %}
+      console.log( "{{ data[0] | jsonify }}" );
+      console.log( "{{ data[1] | jsonify }}" );
       {% if data[1].tags contains tag[0] or data[1].tags contains tag[1] %}
         console.log( "{{ data[0] }}" );
         map.push("{{ data[1].id }}");
