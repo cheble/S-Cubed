@@ -4,7 +4,6 @@ var products = [];
 {% for data in site.data.details %}
   var tags = [];
   {% for tag in data[1].tags %}
-  //
     tags.push("{{ tag }}");
   {% endfor %}
   products.push({
@@ -54,8 +53,6 @@ var Search = function(q){
       console.log("else reached.");
       console.log(product.tags);
       for ( j in product.tags ) {
-        console.log(j);
-        console.log(product.tags[j]);
         if (query.toUpperCase() === product.tags[j].toUpperCase()) {
           matchedIds.push(product.id);
           break;
