@@ -50,7 +50,9 @@ var Search = function(q){
   this.populatePage = function(){
 
     for ( i in matchedIds ) {
-      $("#"+matchedIds[i]+"").parent().show();
+      console.log(i);
+      console.log(matchedIds[i]);
+      $("#"+i+"").parent().show();
     }
 
   }
