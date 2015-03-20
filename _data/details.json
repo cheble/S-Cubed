@@ -1,0 +1,230 @@
+{
+  "draw_io": {
+    "name": "Draw.io",
+    "id": "draw_io",
+    "tags": [
+      "UML Diagram",
+      "Network Diagram",
+      "Process Diagram",
+      "Org Charts",
+      "Flow Charts"
+    ],
+    "image": "https://www.draw.io/images/logo-flat.png",
+    "details": "draw.io is free online diagram software for making flow charts, process diagrams, org charts, UML, ER and network diagrams.",
+    "website": "https://www.draw.io/",
+    "Links": [
+      {
+        "description": "draw.io Plugin for JIRA Home",
+        "url": "https://drawio.atlassian.net/wiki/display/DPFJ/draw.io+Plugin+for+JIRA+Home"
+      },
+      {
+        "description": "Stack Overflow Questions",
+        "url": "http://stackoverflow.com/search?tab=newest&q=draw.io%20"
+      }
+    ],
+    "favorites": 118,
+    "comments": [
+      {
+        "username": "KinLink",
+        "comment": "The best free software for draw UML!!"
+      },
+      {
+        "username": "Bachi",
+        "comment": "I just stumbled over draw.io and love it a lot! I would instantly make it to my default graphing tool. However, there's no hint about the plans with it - Help says it's a demo application."
+      },
+      {
+        "username": "Bezekus",
+        "comment": "This is a very buggy app, do not use."
+      },
+
+      {
+        "username": "Satya101",
+        "comment": "An user friendly application to make simple to complicated diagrams easily and quickly."
+      }
+
+    ]
+  },
+
+  "eclipse": {
+    "name": "Eclipse",
+    "id": "eclipse",
+    "tags": [
+      "IDE",
+      "Java",
+      "C",
+      "C++"
+    ],
+    "image": "https://lh3.googleusercontent.com/-gLK9EQah4RA/AAAAAAAAAAI/AAAAAAAAAdw/ci8rigEvME8/photo.jpg",
+    "details": "Eclipse is a cross-platform ide. It can be used for many languages including Java, C, C++, PHP. Eclipse has many features like syntax highlighting, error highlighting, and auto-complete. Eclipse also has a large plug-in library for additional support.",
+    "website": "http://www.eclipse.org/",
+    "download": "http://www.eclipse.org/downloads/",
+    "Links": [
+      {
+        "description": "Java JRE and JDK downloads",
+        "url": "http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+      },
+      {
+        "description": "Stack Overflow Questions",
+        "url": "http://stackoverflow.com/questions/tagged/eclipse"
+      }
+    ],
+    "favorites": 1258,
+    "comments": [
+      {
+        "username": "teto47",
+        "comment": "I love this IDE. I use it for all of my coding."
+      },
+      {
+        "username": "yielding7",
+        "comment": "This is the IDE we use at work. I love all of the features and the plugin support."
+      },
+      {
+        "username": "someGuy1",
+        "comment": "I hate eclipse. Netbeans is the way to go!"
+      },
+      {
+        "username": "yuro91",
+        "comment": "Which version do I need? Why are there so many download links?"
+      },
+      {
+        "username": "sillyShoes22",
+        "comment": "@yuro91, Select your operating system and choose one that matches the language you will use. For Java, the best option is the 'Eclipse IDE for Java Developers'"
+      }
+    ]
+  },
+
+  "gliffy": {
+    "name": "Gliffy",
+    "id": "gliffy",
+    "tags": [
+      "UML Diagram",
+      "Network Diagram",
+      "Venn Diagram",
+      "Technical Drawing"
+    ],
+    "image": "https://pbs.twimg.com/profile_images/431840457467785216/n6nG92M7.png",
+    "details": "Giffy helps to create professional-quality flowcharts, Org charts, UML diagrams, Network diagrams, Wireframes, Technical drawings and more. Gliffy works directly in your browser!.",
+    "website": "http://www.gliffy.com/",
+    "Links": [
+      {
+        "description": "Gliffy Adds Dynamic Diagrams to Your Confluence Wiki Pages through Confluence Plugin",
+        "url": "http://www.gliffy.com/products/confluence-plugin/"
+      },
+      {
+        "description": "Plugin Detailing with JIRA Issues in Gliffy Diagrams",
+        "url": "http://www.gliffy.com/products/jira-plugin/"
+      },
+      {
+        "description": "Stack Overflow Questions",
+        "url": "http://stackoverflow.com/questions/tagged/gliffy"
+      }
+    ],
+    "favorites": 128,
+    "comments": [
+      {
+        "username": "Onrock7",
+        "comment": "One advantage Gliffy has over Microsoft is ease of collaboration. Currently, SharePoint or SharePoint Online is needed as well as a separate purchase of Visio to share Visio documents."
+      },
+      {
+        "username": "JohnC004",
+        "comment": "This is a pretty comprehensive overview of Gliffy. I dug into the product for a while but it ultimately fell short of my expectations coming from Visio. After some additional research, I ultimately decided to go with Lucidchart which is an alternative to Gliffy because of the real-time collaboration and the Visio compatibility."
+      },
+      {
+        "username": "MackD1",
+        "comment": "Gliffy need to take people's privacy more seriously. After the free trial ends, any diagram you create is automatically PUBLIC. Its easy to be caught out by this. Considering that the diagrams people create could contain security sensitive information, such as network diagrams, this could have serious implications."
+      },
+      {
+        "username": "NewWorld@7",
+        "comment": "MackD1: I agree with you. I am facing the privacy issues too"
+      },
+      {
+        "username": "zen81",
+        "comment": "Gliffy is a very solid product, and it's priced fairly for what you get. In my opinion, Gliffy is definitely a better product than Microsoft Visio, but it's definitely not as good as Lucidchart"
+      }
+    ]
+  },
+
+  "rstudio": {
+    "name": "R Studio",
+    "id": "rstudio",
+    "tags": [
+      "IDE",
+      "R",
+      "Statistics"
+    ],
+    "image": "http://www.rstudio.com/wp-content/uploads/2014/06/RStudio-Ball.png",
+    "details": "R Studio is an IDE for R. R is a programming language for statistical computing and graphics. RStudio requires R 2.11.1 (or higher).",
+    "website": "http://www.rstudio.com/",
+    "download": "http://www.rstudio.com/products/rstudio/download/",
+    "Links": [
+      {
+        "description": "R (required for R Studio)",
+        "url": "http://cran.rstudio.com/"
+      },
+      {
+        "description": "R Studio Cheatsheets",
+        "url": "http://www.rstudio.com/resources/cheatsheets/"
+      }
+    ],
+    "favorites": 1258,
+    "comments": [
+      {
+        "username": "tunOfFun",
+        "comment": "Here is a great resource for getting started: http://data.princeton.edu/R/gettingStarted.html."
+      },
+      {
+        "username": "MathHead314",
+        "comment": "This is a great app. I prefer Matlab for my work though."
+      },
+      {
+        "username": "ThomasTwoToe",
+        "comment": "Don't forget to install R! I did not read the instructions on the site and could not open R Studio after I installed it because I forgot to install R as well."
+      }
+    ]
+  },
+
+  "yuml": {
+    "name": "yUML",
+    "id": "yuml",
+    "tags": [
+      "UML Diagram",
+      "Diagram"
+    ],
+    "image": "http://yuml.me/images/yUML.png",
+    "details": "yUML helps to create and share simple UML diagrams in your blogs, wikis, forums, bug-trackers and emails.",
+    "website": "http://yuml.me/",
+    "Links": [
+      {
+        "description": "3rd Party Tools For Using yUML",
+        "url": "http://yuml.me/wildthing"
+      },
+
+      {
+        "description": "Stack Overflow Questions",
+        "url": "http://stackoverflow.com/search?tab=relevance&q=yUML"
+      }
+    ],
+    "favorites": 58,
+    "comments": [
+      {
+        "username": "PersianPrince",
+        "comment": "yUML saves you time :)"
+      },
+      {
+        "username": "Rome888",
+        "comment": "Nice one to try"
+      },
+      {
+        "username": "Rokus",
+        "comment": "I like it for its easiness."
+      },
+
+      {
+        "username": "XiLihNoh",
+        "comment": "Can someone tell me how to use it?"
+      }
+
+    ]
+  }
+
+}

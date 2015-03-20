@@ -3,12 +3,12 @@
 var tag_maps = [];
 {% for tag in site.data.main.tags %}
 	var map = [];
-  console.log( "{{ site.data | size }}" );
-	{% for product in site.data %}
-      console.log( "{{ product | size }}" );
-      {% if product.tags contains tag[0] or product.tags contains tag[1] %}
-        console.log( "{{ product.tags | jsonify }}" );
-        map.push(product.id);
+  console.log( "{{ site.data.details | size }}" );
+	{% for data in site.data.details %}
+      console.log( "{{ data | size }}" );
+      {% if data.tags contains tag[0] or data.tags contains tag[1] %}
+        console.log( "{{ data[0] }}" );
+        map.push(data.id);
       {% endif %}
 	{% endfor %}
   tag_maps.push({
