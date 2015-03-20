@@ -51,7 +51,7 @@ var Search = function(q){
     // if (query.toUpperCase() === product.id.toUpperCase() ||
     //       query.toUpperCase() === product.name.toUpperCase()) {
     //   matchedIds.push(product.id);
-    }
+    // }
   }
 
   this.populatePage = function(){
