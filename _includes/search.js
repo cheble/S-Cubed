@@ -48,9 +48,9 @@ var Search = function(q){
   for (product in products) {
     console.log(product);
     console.log(query);
-    if (query.toUpperCase() === product.id.toUpperCase() ||
-          query.toUpperCase() === product.name.toUpperCase()) {
-      matchedIds.push(product.id);
+    // if (query.toUpperCase() === product.id.toUpperCase() ||
+    //       query.toUpperCase() === product.name.toUpperCase()) {
+    //   matchedIds.push(product.id);
     }
   }
 
