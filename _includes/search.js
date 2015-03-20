@@ -8,7 +8,7 @@ var tag_maps = [];
       console.log( "{{ data | size }}" );
       {% if data.tags contains tag[0] or data.tags contains tag[1] %}
         console.log( "{{ data[0] }}" );
-        map.push(data.id);
+        map.push("{{ data.id }}");
       {% endif %}
 	{% endfor %}
   tag_maps.push({
