@@ -1,17 +1,18 @@
 <script>
 
-var tag_maps = [];
-{% for tag in site.data.main.tags %}
-	var map = [];
-	{% for data in site.data.details %}
-      {% if data[1].tags contains tag[0] or data[1].tags contains tag[1] %}
-        map.push("{{ data[1].id }}");
-      {% endif %}
-	{% endfor %}
-  tag_maps.push({
-    tag_id: "{{ tag[0] }}",
-    tag: "{{ tag[1] }}",
-    ids: map
+var products = [];
+{% for data in site.data.details %}
+  var tags = [];
+  {% for tag in data.tags %}
+    tags.push("{{ tag[0] }}");
+    tags.push("{{ tag[1] }}");
+  {% endfor %}
+  products.push({
+    id: "{{ data[1].id }}",
+    name: "{{ data[1].name }}",
+    tags: tags,
+    favorites: {{ data[1].favorites }},
+    comments: {{ data[1].comments | size }}
   });
 {% endfor %}
 
@@ -27,23 +28,9 @@ var Search = function(q){
 
   var context = this;
 
-  var sName = q;
+  var query = q;
 
-  var arrTags = [];
-
-  var sImage;
-
-  var sDetails;
-
-  var sWebsite;
-
-  var sDownload;
-
-  var arrLinks = []; //array ( of link )
-
-  var nFavorites;
-
-  var arrComments = []; //arrary ( of comment )
+  var matchedIds = [];
 
   //CONSTANTS//
   var name = "name";
@@ -56,6 +43,14 @@ var Search = function(q){
   var favorites = "favorites";
   var comments = "comments";
   //--------//
+
+
+  for each (value in tag_maps) {
+    if (query.toUpperCase() === value.tag_id.toUpperCase() ||
+          query.toUpperCase() === value.tag.toUpperCase()) {
+      matchedIds.push(value.ids);
+    }
+  }
 
   this.populatePage = function(){
     $("#detailsImage").attr('src',sImage);
@@ -135,20 +130,6 @@ var Search = function(q){
     .always(function() {
       console.log( "complete" );
     });
-  }
-
-  var link = function(description,url){
-
-    this.description = description;
-    this.url = url;
-
-  }
-
-  var comment = function(username,comment){
-
-    this.username = username;
-    this.comment = comment;
-
   }
 
 
