@@ -52,6 +52,7 @@ var Search = function(q){
 
     if (matchedIds.length == 0) {
       $("#0").html("<h2>Your search query does not produce any results.</h2><h3>Try another search query.</h3>");
+      $("#0").show();
     }
 
     for ( i in matchedIds ) {
