@@ -45,14 +45,13 @@ var Search = function(q){
 
 
   for (i in products) {
-    console.log(products[i]);
-    console.log(query);
     var product = products[i];
     if (query.toUpperCase() === product.id.toUpperCase() ||
           query.toUpperCase() === product.name.toUpperCase()) {
       matchedIds.push(product.id);
     }
   }
+  console.log(matchedIds);
 
   this.populatePage = function(){
     $("#detailsImage").attr('src',sImage);
