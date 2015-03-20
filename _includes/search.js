@@ -4,6 +4,7 @@ var tag_maps = [];
 {% for tag in site.data.main.tags %}
 	var map = [];
 	{% for data in site.data %}
+      console.log( "{{ data.tags | jsonify }}" );
       {% if data.tags contains tag[0] or data.tags contains tag[1] %}
         console.log( "{{ data.tags | jsonify }}" );
         map.push(data.id);
