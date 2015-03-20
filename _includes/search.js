@@ -4,8 +4,8 @@ var products = [];
 {% for data in site.data.details %}
   var tags = [];
   {% for tag in data[1].tags %}
-    tags.push("{{ tag[0] }}");
-    tags.push("{{ tag[1] }}");
+  //
+    tags.push("{{ tag }}");
   {% endfor %}
   products.push({
     id: "{{ data[1].id }}",
