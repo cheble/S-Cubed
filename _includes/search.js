@@ -45,13 +45,14 @@ var Search = function(q){
   //--------//
 
 
-  for (product in products) {
-    console.log(product);
+  for (i in products) {
+    console.log(products[i]);
     console.log(query);
-    // if (query.toUpperCase() === product.id.toUpperCase() ||
-    //       query.toUpperCase() === product.name.toUpperCase()) {
-    //   matchedIds.push(product.id);
-    // }
+    var product = products[i];
+    if (query.toUpperCase() === product.id.toUpperCase() ||
+          query.toUpperCase() === product.name.toUpperCase()) {
+      matchedIds.push(product.id);
+    }
   }
 
   this.populatePage = function(){
