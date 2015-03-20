@@ -45,13 +45,13 @@ var Search = function(q){
   //--------//
 
 
-  // for each (product in products) {
-  //
-  //   if (query.toUpperCase() === product.id.toUpperCase() ||
-  //         query.toUpperCase() === product.name.toUpperCase()) {
-  //     matchedIds.push(product.id);
-  //   }
-  // }
+  for (product in products) {
+
+    if (query.toUpperCase() === product.id.toUpperCase() ||
+          query.toUpperCase() === product.name.toUpperCase()) {
+      matchedIds.push(product.id);
+    }
+  }
 
   this.populatePage = function(){
     $("#detailsImage").attr('src',sImage);
@@ -94,43 +94,6 @@ var Search = function(q){
     }
     $("#detailsComments").html(htmlCommentsOut);
 
-  }
-
-  this.setUp = function(){
-    $.getJSON( "_data/"+sName+".json", function( data ) {
-      //Build this Search Object
-      sName = data.name;
-      sImage = data.image;
-      sDetails = data.details;
-      sWebsite = data.website;
-      sDownload = data.download;
-      nFavorites = Number(data.favorites);
-
-      for(var i = 0; i < data.tags.length; i++){
-        arrTags.push(data.tags[i]);
-      }
-
-      for(var i = 0; i < data.Links.length; i++){
-        var l = new link(data.Links[i].description, data.Links[i].url);
-        arrLinks.push(l);
-      }
-
-      for(var i = 0; i < data.comments.length; i++){
-        var c = new comment(data.comments[i].username,data.comments[i].comment);
-        arrComments.push(c);
-      }
-
-      context.populatePage();
-    }).done(function() {
-      console.log( "second success" );
-    })
-    .fail(function( jqxhr, textStatus, error ) {
-      var err = textStatus + ", " + error;
-      console.log( "Request Failed: " + err );
-    })
-    .always(function() {
-      console.log( "complete" );
-    });
   }
 
 
