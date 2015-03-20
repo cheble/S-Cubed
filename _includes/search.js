@@ -1,8 +1,21 @@
 <script>
 
-{% assign grouped =  site.data.data | group_by:"name" %}
-
-var test = "{{ grouped | size }}";
+var tag_maps = [];
+{% for tag in site.data.main.tags %}
+	var map = [];
+	{% for data in site.data %}
+		{% if data.name %}
+      {% if data.tags contains tag[0] or data.tags contains tag[1] %}
+        map.push(data.id);
+      {% endif %}
+		{% endif %}
+	{% endfor %}
+  tag_maps.push({
+    tag_id: "{{ tag[0] }}",
+    tag: "{{ tag[1] }}",
+    ids: map
+  });
+{% endfor %}
 
 var Search ;
 $(document).ready(function() {
