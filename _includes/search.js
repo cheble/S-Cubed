@@ -19,6 +19,7 @@ var Search ;
 $(document).ready(function() {
   //DOM sensitive logic
   Search = new Search(getParameterByName("q"));
+  Search.populatePage();
 });
 
 
