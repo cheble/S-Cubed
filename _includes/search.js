@@ -5,6 +5,7 @@ var tag_maps = [];
 	var map = [];
 	{% for data in site.data %}
       {% if data.tags contains tag[0] or data.tags contains tag[1] %}
+        // {{ data.tags | jsonify }}
         map.push(data.id);
       {% endif %}
 	{% endfor %}
