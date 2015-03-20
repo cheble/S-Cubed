@@ -4,7 +4,7 @@ var tag_maps = [];
 {% for tag in site.data.main.tags %}
 	var map = [];
 	{% for product in site.data %}
-      console.log( "{{ product.tags | jsonify }}" );
+      console.log( "{{ product.name }}" );
       {% if product.tags contains tag[0] or product.tags contains tag[1] %}
         console.log( "{{ product.tags | jsonify }}" );
         map.push(product.id);
