@@ -1,9 +1,8 @@
 <script>
 
 {% assign grouped =  site.data.data | group_by:"name" %}
-var test = [];
 
-var test = "{{ grouped | jsonify }}";
+var test = "{{ grouped | size }}";
 
 var Search ;
 $(document).ready(function() {
