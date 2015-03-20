@@ -80,9 +80,10 @@
 	    		htmlComment = htmlComment.replace("<<author>>","- " + arrComments[i].username);
 	    		htmlCommentsOut += htmlComment;
 	    	}
-	    	htmlCommentsOut += '<div class="form-group">';
-			htmlCommentsOut += '<label for="comment">Comment:</label>';
-			htmlCommentsOut += '<textarea class="form-control" rows="9" id="comment"></textarea>';
+	    	htmlCommentsOut += '<div class="form-group comment_container">';
+			htmlCommentsOut += '<label for="comment">Leave a Comment:</label>';
+			htmlCommentsOut += '<textarea class="form-control comment_area" rows="9" id="comment"></textarea>';
+			htmlCommentsOut += '<a href="#" class="btn btn-raised btn-primary btn-flat">Submit</a>';
 			htmlCommentsOut += '</div>';
 
 	    	$("#detailsComments").html(htmlCommentsOut);
