@@ -1,21 +1,5 @@
 <script>
 
-var products = [];
-{% for data in site.data.details %}
-  var tags = [];
-  {% for tag in data.tags %}
-    tags.push("{{ tag[0] }}");
-    tags.push("{{ tag[1] }}");
-  {% endfor %}
-  products.push({
-    id: "{{ data[1].id }}",
-    name: "{{ data[1].name }}",
-    tags: tags,
-    favorites: {{ data[1].favorites }},
-    comments: {{ data[1].comments | size }}
-  });
-{% endfor %}
-
 var Search ;
 $(document).ready(function() {
   //DOM sensitive logic
@@ -25,6 +9,22 @@ $(document).ready(function() {
 
 
 var Search = function(q){
+  
+  var products = [];
+  {% for data in site.data.details %}
+    var tags = [];
+    {% for tag in data.tags %}
+      tags.push("{{ tag[0] }}");
+      tags.push("{{ tag[1] }}");
+    {% endfor %}
+    products.push({
+      id: "{{ data[1].id }}",
+      name: "{{ data[1].name }}",
+      tags: tags,
+      favorites: {{ data[1].favorites }},
+      comments: {{ data[1].comments | size }}
+    });
+  {% endfor %}
 
   var context = this;
 
