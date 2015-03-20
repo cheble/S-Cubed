@@ -51,7 +51,11 @@ var Search = function(q){
           query.toUpperCase() === product.name.toUpperCase()) {
       matchedIds.push(product.id);
     } else {
+      console.log("else reached.");
+      console.log(product.tags);
       for ( j in product.tags ) {
+        console.log(j);
+        console.log(product.tags[j]);
         if (query.toUpperCase() === product.tags[j].toUpperCase()) {
           matchedIds.push(product.id);
           break;
