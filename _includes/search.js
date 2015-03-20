@@ -45,10 +45,11 @@ var Search = function(q){
   //--------//
 
 
-  for each (value in tag_maps) {
-    if (query.toUpperCase() === value.tag_id.toUpperCase() ||
-          query.toUpperCase() === value.tag.toUpperCase()) {
-      matchedIds.push(value.ids);
+  for each (product in products) {
+
+    if (query.toUpperCase() === product.id.toUpperCase() ||
+          query.toUpperCase() === product.name.toUpperCase()) {
+      matchedIds.push(product.id);
     }
   }
 
