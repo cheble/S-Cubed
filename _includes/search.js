@@ -51,9 +51,7 @@ var Search = function(q){
   this.populatePage = function(){
 
     for ( i in matchedIds ) {
-      console.log(i);
-      console.log(matchedIds[i]);
-      $("#"+i+"").parent().show();
+      $("#"+matchedIds[i]).parent().show();
     }
 
   }
