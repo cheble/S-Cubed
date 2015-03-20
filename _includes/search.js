@@ -48,6 +48,7 @@ var Search = function(q){
     var product = products[i];
     if (query.toUpperCase() === product.id.toUpperCase() ||
           query.toUpperCase() === product.name.toUpperCase()) {
+      console.log("match: ")
       matchedIds.push(product.id);
     }
   }
