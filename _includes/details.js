@@ -45,8 +45,16 @@
 	    	$("#detailsImage").attr('src',sImage);
 	    	$("#detailsTitle").html(sName);
 	    	$("#detailsDetails").html(sDetails);
-	    	$("#detailsHomePageLink").attr('href',sWebsite);
-	    	$("#detailsDownloadLink").attr('href',sDownload);
+				if (sWebsite === undefined) {
+					$("#detailsHomePageLink").hide();
+				} else {
+					$("#detailsHomePageLink").attr('href',sWebsite);
+				}
+				if (sDownload === undefined) {
+					$("#detailsDownloadLink").hide();
+				} else {
+					$("#detailsDownloadLink").attr('href',sDownload);
+				}
 	    	$("#detailsFavorites").html(String(nFavorites));
 
 
