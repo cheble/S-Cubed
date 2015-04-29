@@ -1,5 +1,4 @@
 <script>
-	var Details ;
     $(document).ready(function() {
     	//DOM sensitive logic
     	var email = getParameterByName("email");
