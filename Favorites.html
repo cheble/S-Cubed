@@ -15,7 +15,11 @@ title: Favorites
 {% include tile.html value=site.data.rstudio id=3 %}
 
 <script>
-  $("#main div").each(function(){
-    $(this).show();
-  });
+  $(document).ready(showTiles());
+
+  function showTiles(){
+    $("#main div").each(function(){
+      $(this).show();
+    });
+  }
 </script>
