@@ -10,6 +10,13 @@
     <!-- ******************** Stylesheets ********************* -->
     {% include stylesheets.html %}
     <!-- ****************** END Stylesheets ******************* -->
+
+    <!-- ********************* Javascript ********************* -->
+    {% include global.js %}
+    {% if page.title == 'Details' %} {% include details.js %} {% endif %}
+    {% if page.title == 'Search Results' %} {% include search.js %} {% endif %}
+    {% if page.title == 'Sign up' %} {% include signup.js %} {% endif %}
+    <!-- ******************* END Javascript ******************* -->
   </head>
 
   <body>
@@ -23,12 +30,5 @@
       {{ content }}
     </div>
     <!-- ****************** END Main Content ****************** -->
-
-    <!-- ********************* Javascript ********************* -->
-    {% include global.js %}
-    {% if page.title == 'Details' %} {% include details.js %} {% endif %}
-    {% if page.title == 'Search Results' %} {% include search.js %} {% endif %}
-    {% if page.title == 'Sign up' %} {% include signup.js %} {% endif %}
-    <!-- ******************* END Javascript ******************* -->
   </body>
 </html>
