@@ -11,7 +11,7 @@ var products = [];
     name: "{{ data[1].name }}",
     tags: tags,
     favorites: {{ data[1].favorites }},
-    comments: {{ data[1].comments | map: 'comment' | size }}
+    comments: {{ data[1].comments | size }}
   });
 {% endfor %}
 
