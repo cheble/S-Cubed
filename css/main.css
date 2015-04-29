@@ -72,7 +72,17 @@ body {
   overflow: hidden;
 }
 
-.tile_south {
+.tile_tags {
+  white-space: nowrap;
+  text-transform: none;
+  text-align: left;
+  font-size: 12px;
+  height: 2em;
+  width: 75%;
+  overflow: scroll;
+}
+
+.tile_stats {
   white-space: nowrap;
   text-transform: none;
   text-align: left;
