@@ -4,8 +4,15 @@
       <div class="tile_img left">
           <img class="media-object" src="{{include.value.image}}">
       </div>
-      <div class="tile_img right">
-          <img src="{{include.value.image}}">
+      <div class="tile_stats right">
+        <p>
+          <i class="fa fa-star"></i>
+          <br>{{ include.value.favorites }}
+        </p>
+        <p>
+          <i class="fa fa-comments"></i>
+          <br>{{ include.value.comments }}
+        </p>
       </div>
       <div class="tile_title">
         <h4>{{include.value.name}}</h4>
