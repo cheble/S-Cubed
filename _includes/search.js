@@ -51,15 +51,19 @@ var Search = function(q){
   this.populatePage = function(){
 
     if (matchedIds.length == 0) {
-      $("#0").html("<h2>Your search query does not produce any results.</h2><h3>Try another search query.</h3>");
-      $("#0").show();
+      $("#top").html("<h2>Your search query does not produce any results.</h2><h3>Try another search query.</h3>");
     }
+    $("#top").show();
 
     for ( i in matchedIds ) {
       $("#"+matchedIds[i]).parent().show();
     }
 
   }
+
+  // this.sortResults = function(){
+  //   $("#sort")
+  // }
 
 
 }
