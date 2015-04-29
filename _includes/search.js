@@ -64,6 +64,7 @@ var Search = function(q){
 
   this.sortResults = function(){
     // $("#sort")
+    console.log("sorting");
   }
 
 }
