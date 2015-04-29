@@ -1,20 +1,22 @@
 # S-Cubed
 CSCE 378 Project
 
-Need the search page to automatically populate the three different scenarios (Eclipse, R Studio, Class Mapping)
+Website for our CSCE 378 Group Project
 
-Each scenario needs a separate Listings (Results) Page
+Group Members:
+ * Chase Heble
+ * Elliot Mitchell
+ * Meghna Jain
+ * Mitchell Balschweid
 
-Each scenario needs a details page
 
-^^^^Good enough for phase 4^^^^
 
-Login
-
-Sign up 
-
-Favorites
-
-Inputs
-
-Settings
+**TODO**
+- [ ] Move to the aggregated details.json data file
+- [ ] congregate tags
+- [ ] Add separation before comments in details page
+- [ ] Open external links in background
+- [ ] Details page - fix tag button spacing
+- [ ] Create a simple Submit page
+- [ ] Add some info to the home page
+- [ ] Add some more logic to the search functionality (if no results, loosen the matching requirements)
