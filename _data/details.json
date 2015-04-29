@@ -4,10 +4,10 @@
     "id": "draw_io",
     "tags": [
       "UML Diagram",
-      "Network Diagram",
-      "Process Diagram",
-      "Org Charts",
-      "Flow Charts"
+      "Wireframe",
+      "Charts",
+      "Drawing",
+      "Diagram"
     ],
     "image": "https://www.draw.io/images/logo-flat.png",
     "details": "draw.io is free online diagram software for making flow charts, process diagrams, org charts, UML, ER and network diagrams.",
@@ -98,9 +98,10 @@
     "id": "gliffy",
     "tags": [
       "UML Diagram",
-      "Network Diagram",
-      "Venn Diagram",
-      "Technical Drawing"
+      "Wireframe",
+      "Charts",
+      "Drawing",
+      "Diagram"
     ],
     "image": "https://pbs.twimg.com/profile_images/431840457467785216/n6nG92M7.png",
     "details": "Giffy helps to create professional-quality flowcharts, Org charts, UML diagrams, Network diagrams, Wireframes, Technical drawings and more. Gliffy works directly in your browser!.",

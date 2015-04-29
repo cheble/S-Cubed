@@ -14,9 +14,10 @@ Group Members:
 **TODO**
 - [ ] Move to the aggregated details.json data file
 - [ ] congregate tags
-- [ ] Add separation before comments in details page
-- [ ] Open external links in background
-- [ ] Details page - fix tag button spacing
+- [x] Add separation before comments in details page
+- [x] Open external links in background
+- [x] Details page - fix tag button spacing
 - [ ] Create a simple Submit page
+- [ ] make favorites button for details page; give feedback on press
 - [ ] Add some info to the home page
 - [ ] Add some more logic to the search functionality (if no results, loosen the matching requirements)
