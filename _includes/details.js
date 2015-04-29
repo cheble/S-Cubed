@@ -63,7 +63,7 @@
 
 	    	var htmlTagOut=""
 	    	for(var i = 0; i < arrTags.length; i++){
-	    		var htmlTags = "<a href='<<href>>' class='btn btn-info btn-xs'><<text>></a>"
+	    		var htmlTags = "<a href='<<href>>' style='padding:0' class='btn btn-info btn-xs'><<text>></a>"
 	    		htmlTags = htmlTags.replace("<<href>>",tagLink);
 	    		htmlTags = htmlTags.replace("<<text>>",arrTags[i]);
 	    		htmlTagOut += htmlTags;
