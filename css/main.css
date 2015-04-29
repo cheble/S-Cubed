@@ -116,12 +116,11 @@ body {
   overflow: hidden;
   margin-top: 10px;
   margin-bottom: 10px;
-  /*border-radius: 0;*/
 }
 
 .separator:before {
   content: "";
-  width: calc(100% - 90px);
+  width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   float: right;
 }
