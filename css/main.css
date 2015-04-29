@@ -83,7 +83,6 @@ body {
 }
 
 .tile_stats {
-  white-space: wrap;
   text-transform: none;
   text-align: right;
   font-size: 12px;
