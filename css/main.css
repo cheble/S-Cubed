@@ -90,6 +90,7 @@ body {
   border-right: 4px;
   width: 50px;
   height: 6.5em;
+  overflow: hidden;
 }
 
 .tile_img {
