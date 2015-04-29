@@ -53,6 +53,7 @@ var Search = function(q){
     if (matchedIds.length == 0) {
       $("#top").html("<h2>Your search query does not produce any results.</h2><h3>Try another search query.</h3>");
     }
+    $("#sort").prop('selectedIndex', -1);
     $("#top").show();
 
     for ( i in matchedIds ) {
@@ -61,10 +62,9 @@ var Search = function(q){
 
   }
 
-  // this.sortResults = function(){
-  //   $("#sort")
-  // }
-
+  this.sortResults = function(){
+    // $("#sort")
+  }
 
 }
 
