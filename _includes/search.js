@@ -63,8 +63,10 @@ var Search = function(q){
   }
 
   this.sortResults = function(){
-    // $("#sort")
-    console.log("sorting");
+    var type = $("#sort").val();
+
+
+    console.log("type");
   }
 
 }
