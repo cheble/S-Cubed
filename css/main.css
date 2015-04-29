@@ -111,6 +111,21 @@ body {
   -webkit-border-radius: 2px
 }
 
+.separator {
+  clear: both;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*border-radius: 0;*/
+}
+
+.separator:before {
+  content: "";
+  width: calc(100% - 90px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  float: right;
+}
+
 
 /*Details Page*/
 #detailsImage{
