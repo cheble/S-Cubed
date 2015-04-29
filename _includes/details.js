@@ -64,7 +64,7 @@
 	    	var htmlTagOut=""
 	    	for(var i = 0; i < arrTags.length; i++){
 	    		var htmlTags = "<a href='<<href>>' style='padding:4px 20px;' class='btn btn-info btn-xs'><<text>></a>"
-	    		htmlTags = htmlTags.replace("<<href>>","Search.html?q=" +encodeURIComponent(arrTags[i]));
+	    		htmlTags = htmlTags.replace("<<href>>","SearchResults.html?q=" +encodeURIComponent(arrTags[i]));
 	    		htmlTags = htmlTags.replace("<<text>>",arrTags[i]);
 	    		htmlTagOut += htmlTags;
 	    	}
