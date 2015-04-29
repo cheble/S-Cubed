@@ -83,13 +83,12 @@ body {
 }
 
 .tile_stats {
-  white-space: nowrap;
+  white-space: wrap;
   text-transform: none;
-  text-align: left;
+  text-align: right;
   font-size: 12px;
-  height: 2em;
-  width: 75%;
-  overflow: scroll;
+  /*height: 2em;*/
+  width: 25%;
 }
 
 .tile_img {
