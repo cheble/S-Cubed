@@ -65,7 +65,7 @@ var Search = function(q){
       $("#"+matchedIds[i]).parent().show();
     }
 
-    sortResults();
+    this.sortResults();
 
   }
 
