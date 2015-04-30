@@ -31,6 +31,12 @@ var Search = function(q){
 
   var matchedIds = [];
 
+  var byName = [];
+
+  var byComments = [];
+
+  var byFavorites = [];
+
   for (i in products) {
     var product = products[i];
 
@@ -65,8 +71,38 @@ var Search = function(q){
   this.sortResults = function(){
     var type = $("#sort").val();
 
+    if (type == "Name") {
+      products.sort(compareProductByName());
+    } else if (type == "Favorites") {
+      products.sort(compareProductByFavorites());
+    } else if (type == "Comments") {
+      products.sort(compareProductByComments());
+    }
 
-    console.log("type");
+    // reorder products;
+    for (var i=products.length-1; i>=0; i--) {
+      $("#"+products[i].id).parent().insertAfter("#top");
+    }
+
+    console.log("sorted");
+  }
+
+  this.compareProductByName(a, b) = function() {
+    if (a.name < b.name) {
+      return -1;
+    } else if (a.name == b.name) {
+      return 0;
+    } else {
+      return 1;
+    }
+  }
+
+  this.compareProductByFavorites(a, b) = function() {
+    return a.favorites - b.favorites;
+  }
+
+  this.compareProductByComments(a, b) = function() {
+    return a.comments - b.comments;
   }
 
 }
