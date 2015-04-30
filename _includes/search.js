@@ -95,8 +95,17 @@ var Search = function(q){
     }
 
   }
+  this.compareProductByName = function(a, b) {
+    if (a.name < b.name) {
+      return -1;
+    } else if (a.name == b.name) {
+      return 0;
+    } else {
+      return 1;
+    }
+  }
 
-  function compareProductByFavorites(a, b) {
+  this.compareProductByFavorites = function(a, b) {
     console.log(a.favorites + "-" + b.favorites + "=" + (a.favorites - b.favorites));
     return a.favorites - b.favorites;
   }
@@ -107,14 +116,6 @@ var Search = function(q){
 
 }
 
-function compareProductByName(a, b) {
-  if (a.name < b.name) {
-    return -1;
-  } else if (a.name == b.name) {
-    return 0;
-  } else {
-    return 1;
-  }
-}
+
 
 </script>
