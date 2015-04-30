@@ -74,10 +74,13 @@ var Search = function(q){
 
     if (type == "Name") {
       products.sort(compareProductByName);
+      console.log("sorted by name");
     } else if (type == "Favorites") {
       products.sort(this.compareProductByFavorites);
+      console.log("sorted by favorites");
     } else if (type == "Comments") {
       products.sort(this.compareProductByComments);
+      console.log("sorted by comments");
     }
 
     // reorder products;
@@ -91,11 +94,7 @@ var Search = function(q){
       }
     }
 
-
-    console.log("sorted");
   }
-
-
 
   function compareProductByFavorites(a, b) {
     return a.favorites - b.favorites;
@@ -108,7 +107,6 @@ var Search = function(q){
 }
 
 function compareProductByName(a, b) {
-  console.log(a);
   if (a.name < b.name) {
     return -1;
   } else if (a.name == b.name) {
