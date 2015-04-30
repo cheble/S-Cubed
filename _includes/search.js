@@ -74,11 +74,11 @@ var Search = function(q){
     var order = $("#order").val();
 
     if (type == "Name") {
-      products.sort(this.compareProductByName);
+      products.sort(Search.compareProductByName);
     } else if (type == "Favorites") {
-      products.sort(this.compareProductByFavorites);
+      products.sort(Search.compareProductByFavorites);
     } else if (type == "Comments") {
-      products.sort(this.compareProductByComments);
+      products.sort(Search.compareProductByComments);
     }
 
     // reorder products;
@@ -94,33 +94,33 @@ var Search = function(q){
 
   }
 
-  this.compareProductByName = function(a, b) {
-    if (a.name < b.name) {
-      return -1;
-    } else if (a.name == b.name) {
-      return 0;
-    } else {
-      return 1;
-    }
-  }
+}
 
-  this.compareProductByFavorites = function(a, b) {
-    var diff = a.favorites - b.favorites;
-    if (diff == 0) {
-      return this.compareProductByName(a, b);
-    } else {
-      return diff;
-    }
+Search.compareProductByName = function(a, b) {
+  if (a.name < b.name) {
+    return -1;
+  } else if (a.name == b.name) {
+    return 0;
+  } else {
+    return 1;
   }
+}
 
-  this.compareProductByComments = function(a, b) {
-    var diff = a.comments - b.comments;
-    if (diff == 0) {
-      return this.compareProductByName(a, b);
-    } else {
-      return diff;
-    }
+Search.compareProductByFavorites = function(a, b) {
+  var diff = a.favorites - b.favorites;
+  if (diff == 0) {
+    return Search.compareProductByName(a, b);
+  } else {
+    return diff;
   }
+}
 
+Search.compareProductByComments = function(a, b) {
+  var diff = a.comments - b.comments;
+  if (diff == 0) {
+    return Search.compareProductByName(a, b);
+  } else {
+    return diff;
+  }
 }
 </script>
