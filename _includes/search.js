@@ -56,8 +56,6 @@ var Search = function(q){
 
   this.populatePage = function(){
 
-    sortResults();
-
     if (matchedIds.length == 0) {
       $("#top").html("<h2>Your search query does not produce any results.</h2><h3>Try another search query.</h3>");
     }
@@ -66,6 +64,8 @@ var Search = function(q){
     for ( i in matchedIds ) {
       $("#"+matchedIds[i]).parent().show();
     }
+
+    sortResults();
 
   }
 
