@@ -70,6 +70,7 @@ var Search = function(q){
 
   this.sortResults = function(){
     var type = $("#sort").val();
+    var order = $("#order").val();
 
     if (type == "Name") {
       products.sort(compareProductByName());
@@ -80,9 +81,16 @@ var Search = function(q){
     }
 
     // reorder products;
-    for (var i=products.length-1; i>=0; i--) {
-      $("#"+products[i].id).parent().insertAfter("#top");
+    if (order == "Accending") {
+      for (var i=products.length-1; i>=0; i--) {
+        $("#"+products[i].id).parent().insertAfter("#top");
+      }
+    } else {
+      for (var i=0; i<products.length; i++) {
+        $("#"+products[i].id).parent().insertAfter("#top");
+      }
     }
+
 
     console.log("sorted");
   }
