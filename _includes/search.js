@@ -56,10 +56,11 @@ var Search = function(q){
 
   this.populatePage = function(){
 
+    sortResults();
+
     if (matchedIds.length == 0) {
       $("#top").html("<h2>Your search query does not produce any results.</h2><h3>Try another search query.</h3>");
     }
-    $("#sort").prop('selectedIndex', -1);
     $("#top").show();
 
     for ( i in matchedIds ) {
