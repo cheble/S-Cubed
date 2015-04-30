@@ -87,7 +87,7 @@ var Search = function(q){
     console.log("sorted");
   }
 
-  this.compareProductByName() = function(a, b) {
+  this.compareProductByName = function(a, b) {
     if (a.name < b.name) {
       return -1;
     } else if (a.name == b.name) {
@@ -97,11 +97,11 @@ var Search = function(q){
     }
   }
 
-  this.compareProductByFavorites() = function(a, b) {
+  this.compareProductByFavorites = function(a, b) {
     return a.favorites - b.favorites;
   }
 
-  this.compareProductByComments() = function(a, b) {
+  this.compareProductByComments = function(a, b) {
     return a.comments - b.comments;
   }
 
