@@ -107,22 +107,11 @@ Search.compareProductByName = function(a, b) {
 }
 
 Search.compareProductByFavorites = function(a, b) {
-  if (a.favorites < b.favorites) {
-    return -1;
-  } else if (a.favorites == b.favorites) {
-    return Search.compareProductByName(a, b);
-  } else {
-    return 1;
-  }
+  return a.favorites - b.favorites;
 }
 
 Search.compareProductByComments = function(a, b) {
-  if (a.comments < b.comments) {
-    return -1;
-  } else if (a.comments == b.comments) {
-    return Search.compareProductByName(a, b);
-  } else {
-    return 1;
-  }
+  return a.comments - b.comments;
 }
+
 </script>
