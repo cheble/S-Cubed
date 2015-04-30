@@ -94,24 +94,24 @@ var Search = function(q){
 
   }
 
-}
-
-Search.compareProductByName = function(a, b) {
-  if (a.name < b.name) {
-    return -1;
-  } else if (a.name == b.name) {
-    return 0;
-  } else {
-    return 1;
+  this.compareProductByName = function(a, b) {
+    if (a.name < b.name) {
+      return -1;
+    } else if (a.name == b.name) {
+      return 0;
+    } else {
+      return 1;
+    }
   }
-}
 
-Search.compareProductByFavorites = function(a, b) {
-  return a.favorites - b.favorites;
-}
+  this.compareProductByFavorites = function(a, b) {
+    return a.favorites - b.favorites;
+  }
 
-Search.compareProductByComments = function(a, b) {
-  return a.comments - b.comments;
+  this.compareProductByComments = function(a, b) {
+    return a.comments - b.comments;
+  }
+
 }
 
 </script>
