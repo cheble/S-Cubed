@@ -158,6 +158,7 @@
 					$(".favorite").children().first().addClass("fa-star-o");
 
 					// decrement number
+					$("#detailsFavorites").html(String(nFavorites));
 				} else {
 					// non-Favorite -> Favorite
 					$(".favorite").attr("data-original-title", "Add To Your Favorites!");
@@ -165,6 +166,7 @@
 					$(".favorite").children().first().addClass("fa-star");
 
 					// increment number
+					$("#detailsFavorites").html(String(nFavorites+1));
 				}
 			}
 
