@@ -154,13 +154,15 @@
 				if ( $(".favorite").children().first().hasClass("mdi-material-lime") ) {
 					// Favorite -> non-Favorite
 					$(".favorite").attr("data-original-title", "Remove From Your Favorites.");
-					$(".favorite").children().first().removeClass("mdi-material-lime");
+					$(".favorite").children().first().removeClass("fa-star");
+					$(".favorite").children().first().addClass("fa-star-o");
 
 					// decrement number
 				} else {
 					// non-Favorite -> Favorite
 					$(".favorite").attr("data-original-title", "Add To Your Favorites!");
-					$(".favorite").children().first().addClass("mdi-material-lime");
+					$(".favorite").children().first().removeClass("fa-star-o");
+					$(".favorite").children().first().addClass("fa-star");
 
 					// increment number
 				}
