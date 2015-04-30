@@ -73,7 +73,7 @@ var Search = function(q){
     var order = $("#order").val();
 
     if (type == "Name") {
-      products.sort(compareProductByName);
+      products.sort(this.compareProductByName);
       console.log("sorted by name");
     } else if (type == "Favorites") {
       products.sort(this.compareProductByFavorites);
@@ -106,6 +106,7 @@ var Search = function(q){
   }
 
   this.compareProductByFavorites = function(a, b) {
+    console.log("test");
     console.log(a.favorites + "-" + b.favorites + "=" + (a.favorites - b.favorites));
     return a.favorites - b.favorites;
   }
