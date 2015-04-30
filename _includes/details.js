@@ -133,9 +133,9 @@
 			  .always(function() {
 			    console.log( "complete" );
 			  });
-		}
+			}
 
-		var link = function(description,url){
+			var link = function(description,url){
 
 	    	this.description = description;
 	    	this.url = url;
@@ -149,6 +149,22 @@
 
 	    }
 
+			var favoriteAction = function(){
+
+				if ($(".favorite").children().first().hasClass("mdi-material-lime"));) {
+					// Favorite -> non-Favorite
+					$(".favorite").attr("data-original-title", "Remove From Your Favorites.");
+					$(".favorite").children().first().removeClass("mdi-material-lime");
+
+					// decrement number
+				} else {
+					// non-Favorite -> Favorite
+					$(".favorite").attr("data-original-title", "Add To Your Favorites!");
+					$(".favorite").children().first().addClass("mdi-material-lime");
+
+					// increment number
+				}
+			}
 
     }
 
