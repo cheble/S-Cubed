@@ -73,7 +73,7 @@ var Search = function(q){
     var order = $("#order").val();
 
     if (type == "Name") {
-      products.sort(this.compareProductByName());
+      products.sort(compareProductByName());
     } else if (type == "Favorites") {
       products.sort(this.compareProductByFavorites());
     } else if (type == "Comments") {
@@ -95,17 +95,9 @@ var Search = function(q){
     console.log("sorted");
   }
 
-  this.compareProductByName = function(a, b) {
-    if (a.name < b.name) {
-      return -1;
-    } else if (a.name == b.name) {
-      return 0;
-    } else {
-      return 1;
-    }
-  }
 
-  this.compareProductByFavorites = function(a, b) {
+
+  function compareProductByFavorites(a, b) {
     return a.favorites - b.favorites;
   }
 
@@ -113,6 +105,17 @@ var Search = function(q){
     return a.comments - b.comments;
   }
 
+}
+
+function compareProductByName(a, b) {
+  console.log(a);
+  if (a.name < b.name) {
+    return -1;
+  } else if (a.name == b.name) {
+    return 0;
+  } else {
+    return 1;
+  }
 }
 
 </script>
