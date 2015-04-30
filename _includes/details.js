@@ -151,7 +151,7 @@
 
 			this.favoriteAction = function(){
 
-				if ( $(".favorite").children().first().hasClass("mdi-material-lime") ) {
+				if ( $(".favorite").children().first().hasClass("fa-star") ) {
 					// Favorite -> non-Favorite
 					$(".favorite").attr("data-original-title", "Remove From Your Favorites.");
 					$(".favorite").children().first().removeClass("fa-star");
