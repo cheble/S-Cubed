@@ -105,39 +105,11 @@ var Search = function(q){
   }
 
   this.compareProductByFavorites = function(a, b) {
-    if (a.favorites < b.favorites) {
-      return -1;
-    } else if (a.favorites == b.favorites) {
-      // compare by name if equal
-      if (a.name < b.name) {
-        return -1;
-      } else if (a.name == b.name) {
-        return 0;
-      } else {
-        return 1;
-      }
-
-    } else {
-      return 1;
-    }
+    return a.favorites - b.favorites;
   }
 
   this.compareProductByComments = function(a, b) {
-    if (a.comments < b.comments) {
-      return -1;
-    } else if (a.comments == b.comments) {
-      // compare by name if equal
-      if (a.name < b.name) {
-        return -1;
-      } else if (a.name == b.name) {
-        return 0;
-      } else {
-        return 1;
-      }
-
-    } else {
-      return 1;
-    }
+    return a.comments - b.comments;
   }
 
 }
