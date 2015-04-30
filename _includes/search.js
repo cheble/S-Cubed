@@ -105,11 +105,21 @@ var Search = function(q){
   }
 
   this.compareProductByFavorites = function(a, b) {
-    return a.favorites - b.favorites;
+    var diff = a.favorites - b.favorites;
+    if (diff == 0) {
+      return compareProductByName(a, b)
+    } else {
+      return diff;
+    }
   }
 
   this.compareProductByComments = function(a, b) {
-    return a.comments - b.comments;
+    var diff = a.comments - b.comments;
+    if (diff == 0) {
+      return compareProductByName(a, b)
+    } else {
+      return diff;
+    }
   }
 
 }
