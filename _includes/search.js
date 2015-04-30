@@ -97,6 +97,7 @@ var Search = function(q){
   }
 
   function compareProductByFavorites(a, b) {
+    console.log(a.favorites + "-" + b.favorites + "=" + (a.favorites - b.favorites));
     return a.favorites - b.favorites;
   }
 
