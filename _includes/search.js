@@ -106,8 +106,6 @@ var Search = function(q){
   }
 
   this.compareProductByFavorites = function(a, b) {
-    console.log("test");
-    console.log(a.favorites + "-" + b.favorites + "=" + (a.favorites - b.favorites));
     return a.favorites - b.favorites;
   }
 
