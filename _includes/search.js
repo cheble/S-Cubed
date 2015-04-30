@@ -74,13 +74,10 @@ var Search = function(q){
 
     if (type == "Name") {
       products.sort(this.compareProductByName);
-      console.log("sorted by name");
     } else if (type == "Favorites") {
       products.sort(this.compareProductByFavorites);
-      console.log("sorted by favorites");
     } else if (type == "Comments") {
       products.sort(this.compareProductByComments);
-      console.log("sorted by comments");
     }
 
     // reorder products;
@@ -95,6 +92,7 @@ var Search = function(q){
     }
 
   }
+
   this.compareProductByName = function(a, b) {
     if (a.name < b.name) {
       return -1;
@@ -114,7 +112,4 @@ var Search = function(q){
   }
 
 }
-
-
-
 </script>
