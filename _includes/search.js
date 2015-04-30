@@ -107,7 +107,7 @@ var Search = function(q){
   this.compareProductByFavorites = function(a, b) {
     var diff = a.favorites - b.favorites;
     if (diff == 0) {
-      return compareProductByName(a, b);
+      return this.compareProductByName(a, b);
     } else {
       return diff;
     }
@@ -116,7 +116,7 @@ var Search = function(q){
   this.compareProductByComments = function(a, b) {
     var diff = a.comments - b.comments;
     if (diff == 0) {
-      return compareProductByName(a, b);
+      return this.compareProductByName(a, b);
     } else {
       return diff;
     }
