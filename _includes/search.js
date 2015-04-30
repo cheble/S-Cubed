@@ -73,11 +73,11 @@ var Search = function(q){
     var order = $("#order").val();
 
     if (type == "Name") {
-      products.sort(compareProductByName());
+      products.sort(compareProductByName);
     } else if (type == "Favorites") {
-      products.sort(this.compareProductByFavorites());
+      products.sort(this.compareProductByFavorites);
     } else if (type == "Comments") {
-      products.sort(this.compareProductByComments());
+      products.sort(this.compareProductByComments);
     }
 
     // reorder products;
