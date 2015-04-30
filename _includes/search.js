@@ -107,20 +107,22 @@ Search.compareProductByName = function(a, b) {
 }
 
 Search.compareProductByFavorites = function(a, b) {
-  var diff = a.favorites - b.favorites;
-  if (diff == 0) {
+  if (a.favorites < b.favorites) {
+    return -1;
+  } else if (a.favorites == b.favorites) {
     return Search.compareProductByName(a, b);
   } else {
-    return diff;
+    return 1;
   }
 }
 
 Search.compareProductByComments = function(a, b) {
-  var diff = a.comments - b.comments;
-  if (diff == 0) {
+  if (a.comments < b.comments) {
+    return -1;
+  } else if (a.comments == b.comments) {
     return Search.compareProductByName(a, b);
   } else {
-    return diff;
+    return 1;
   }
 }
 </script>
