@@ -151,7 +151,7 @@
 
 			var favoriteAction = function(){
 
-				if ($(".favorite").children().first().hasClass("mdi-material-lime"))) {
+				if ( $(".favorite").children().first().hasClass("mdi-material-lime") ) {
 					// Favorite -> non-Favorite
 					$(".favorite").attr("data-original-title", "Remove From Your Favorites.");
 					$(".favorite").children().first().removeClass("mdi-material-lime");
