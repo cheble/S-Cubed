@@ -149,7 +149,7 @@
 
 	    }
 
-			var favoriteAction = function(){
+			this.favoriteAction = function(){
 
 				if ( $(".favorite").children().first().hasClass("mdi-material-lime") ) {
 					// Favorite -> non-Favorite
